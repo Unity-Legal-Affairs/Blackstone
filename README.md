@@ -2,47 +2,46 @@
 <img src="https://iclr.s3-eu-west-1.amazonaws.com/assets/iclrand/blackstone_seal.svg" height=75%>
 
 # Blackstone [![Built with spaCy](https://img.shields.io/badge/made%20with%20❤%20and-spaCy-09a3d5.svg)](https://spacy.io)
-Blackstone is a [spaCy](https://spacy.io/) model and library for processing long-form, unstructured legal text. Blackstone is an experimental research project from the [Incorporated Council of Law Reporting for England and Wales'](https://iclr.co.uk/) research lab, [ICLR&D](https://research.iclr.co.uk/). Blackstone was written by [Daniel Hoadley](https://twitter.com/DanHLawReporter). 
-
+Blackstone is a [spaCy](https://spacy.io/) model and library for processing long-form, unstructured legal text. Blackstone is an experimental research project from the [Incorporated Council of Law Reporting for England and Wales'](https://iclr.co.uk/) research lab, [ICLR&D](https://research.iclr.co.uk/).
 ## Contents
 
-[**Why are we building Blackstone?**](https://github.com/ICLRandD/Blackstone#why-are-we-building-blackstone)
+[**Why are we building Blackstone?**](https://github.com/Unity-Legal-Affairs/Blackstone#why-are-we-building-blackstone)
 
-[**What's special about Blackstone?**](https://github.com/ICLRandD/Blackstone#whats-special-about-blackstone)
+[**What's special about Blackstone?**](https://github.com/Unity-Legal-Affairs/Blackstone#whats-special-about-blackstone)
 
-[**Observations and other things worth noting**](https://github.com/ICLRandD/Blackstone#observations-and-other-things-worth-noting)
+[**Observations and other things worth noting**](https://github.com/Unity-Legal-Affairs/Blackstone#observations-and-other-things-worth-noting)
 
-[**Installation**](https://github.com/ICLRandD/Blackstone#installation)
+[**Installation**](https://github.com/Unity-Legal-Affairs/Blackstone#installation)
 
 &nbsp;&nbsp;&nbsp;&nbsp;[Install the library](https://github.com/ICLRandD/Blackstone#1-install-the-library)
 
-&nbsp;&nbsp;&nbsp;&nbsp;[Install the Blackstone model](https://github.com/ICLRandD/Blackstone#2-install-the-blackstone-model)
+&nbsp;&nbsp;&nbsp;&nbsp;[Install the Blackstone model](https://github.com/Unity-Legal-Affairs/Blackstone#2-install-the-blackstone-model)
 
-[**About the model**](https://github.com/ICLRandD/Blackstone#about-the-model)
+[**About the model**](https://github.com/Unity-Legal-Affairs/Blackstone#about-the-model)
 
-&nbsp;&nbsp;&nbsp;&nbsp;[The pipeline](https://github.com/ICLRandD/Blackstone#the-pipeline)
+&nbsp;&nbsp;&nbsp;&nbsp;[The pipeline](https://github.com/Unity-Legal-Affairs/Blackstone#the-pipeline)
 
-&nbsp;&nbsp;&nbsp;&nbsp;[Named-Entity Recogniser](https://github.com/ICLRandD/Blackstone#named-entity-recogniser)
+&nbsp;&nbsp;&nbsp;&nbsp;[Named-Entity Recogniser](https://github.com/Unity-Legal-Affairs/Blackstone#named-entity-recogniser)
 
-&nbsp;&nbsp;&nbsp;&nbsp;[Text categoriser](https://github.com/ICLRandD/Blackstone#text-categoriser)
+&nbsp;&nbsp;&nbsp;&nbsp;[Text categoriser](https://github.com/Unity-Legal-Affairs/Blackstone#text-categoriser)
 
-[**Usage**](https://github.com/ICLRandD/Blackstone#usage)
+[**Usage**](https://github.com/Unity-Legal-Affairs/Blackstone#usage)
 
-&nbsp;&nbsp;&nbsp;&nbsp;[Applying the NER model](https://github.com/ICLRandD/Blackstone#applying-the-ner-model)
+&nbsp;&nbsp;&nbsp;&nbsp;[Applying the NER model](https://github.com/Unity-Legal-Affairs/Blackstone#applying-the-ner-model)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Visualising entities](https://github.com/ICLRandD/Blackstone#visualising-entities)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Visualising entities](https://github.com/Unity-Legal-Affairs/Blackstone#visualising-entities)
 
-&nbsp;&nbsp;&nbsp;&nbsp;[Applying the text categoriser model](https://github.com/ICLRandD/Blackstone#applying-the-text-categoriser-model)
+&nbsp;&nbsp;&nbsp;&nbsp;[Applying the text categoriser model](https://github.com/Unity-Legal-Affairs/Blackstone#applying-the-text-categoriser-model)
 
-[**Custom pipeline extensions**](https://github.com/ICLRandD/Blackstone#custom-pipeline-extensions)
+[**Custom pipeline extensions**](https://github.com/Unity-Legal-Affairs/Blackstone#custom-pipeline-extensions)
 
-&nbsp;&nbsp;&nbsp;&nbsp;[Abbreviation and long-form definition resolution](https://github.com/ICLRandD/Blackstone#abbreviation-detection-and-long-form-definition-resolution)
+&nbsp;&nbsp;&nbsp;&nbsp;[Abbreviation and long-form definition resolution](https://github.com/Unity-Legal-Affairs/Blackstone#abbreviation-detection-and-long-form-definition-resolution)
 
-&nbsp;&nbsp;&nbsp;&nbsp;[Compound case reference detections](https://github.com/ICLRandD/Blackstone#compound-case-reference-detection)
+&nbsp;&nbsp;&nbsp;&nbsp;[Compound case reference detections](https://github.com/Unity-Legal-Affairs/Blackstone#compound-case-reference-detection)
 
-&nbsp;&nbsp;&nbsp;&nbsp;[Legislation linker](https://github.com/ICLRandD/Blackstone#legislation-linker)
+&nbsp;&nbsp;&nbsp;&nbsp;[Legislation linker](https://github.com/Unity-Legal-Affairs/Blackstone#legislation-linker)
 
-&nbsp;&nbsp;&nbsp;&nbsp;[Sentence segmenter](https://github.com/ICLRandD/Blackstone#sentence-segmenter)
+&nbsp;&nbsp;&nbsp;&nbsp;[Sentence segmenter](https://github.com/Unity-Legal-Affairs/Blackstone#sentence-segmenter)
 
 
 
@@ -373,10 +372,4 @@ for sent in doc.sents:
     print (sent.text)
 ```
 
-## Thanks
 
-We would like to thank the following people/organisations who have helped us (directly or indirectly) to build this prototype.
-
-* [Mark Neumann](https://twitter.com/MarkNeumannnn) of [AI2](https://allenai.org/) and [scispaCy](https://allenai.github.io/scispacy/)
-* [Explosion AI](https://explosion.ai/) for building [spaCy](https://spacy.io/) and [Prodigy](https://prodi.gy/)
-* [Kristin Hodgins](https://twitter.com/kristinhodgins) of the Office of the Attorney General of British Columbia
